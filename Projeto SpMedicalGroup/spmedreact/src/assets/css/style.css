@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100vw;
+    height: 750px;
+    background-image: url(../../assets/img/header-bg.png);
+    background-repeat: no-repeat;
+}
+
+.cor-erro {
+    background-color: #0064FF;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.conta {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-conta {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.logo-conta h1 {
+    font-family: 'Andada SC', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-conta a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF
+}
+
+.perfil {
+    border-radius: 50%;
+    background: #0094FF;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda {
+    border-radius: 50%;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: #FBFBFB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.links_div {
+    display: flex;
+    width: 325px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #080808;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.input_pesquisa {
+    display: flex;
+}
+
+nav input {
+    text-align: center;
+    width: 260px;
+    height: 38px;
+    background: #0094FF;
+    border: 1px solid #0094FF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px 0 0 17px;
+}
+
+.input_pesquisa button {
+    border: none;
+    background-color: #0094FF;
+    height: 38px;
+    width: 40px;
+    border-radius: 0px 17px 17px 0px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.input_pesquisa button:hover {
+    background-color: #0064FF;
+    transition: 1s;
+}
+
+nav input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mensagem_login {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    height: 140px;
+}
+
+.mensagem_login h1 {
+    width: 1200px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mensagem_login span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    /* text-align: center; */
+    color: #3586FF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign_buttons_box {
+    width: 100%;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+}
+
+.sign_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 895px;
+}
+
+.sign_buttons a {
+    width: 355.64px;
+    height: 66px;
+}
+
+.sign_buttons .sign_in {
+    background: rgba(0, 148, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 43px;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.sign_buttons .sign_in:hover {
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+.sign_buttons .sign_up {
+    border: 4px solid #FBFBFB;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 43px;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.sign_buttons .sign_up:hover {
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+hr {
+    height: 100%;
+    width: 3px;
+    background-color: whitesmoke;
+}
+
+.main_home {
+    background-color: #FCFCFC;
+}
+
+.cards_container {
+    height: 455px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.box_cards {
+    width: 100%;
+    height: 300px;
+    background: #C0E4FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_cards article {
+    width: 212.12px;
+    height: 215.59px;
+    background: #0094FF;
+    border-radius: 15px;
+    filter: drop-shadow(10px 12px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre {
+    height: 828px;
+    background: url(../img/background-sobre.png);
+}
+
+.box_sobre {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 450px;
+    flex-direction: column;
+}
+
+.box_sobre h1 {
+    font-family: 'Andada SC', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    margin-left: 50px
+}
+
+.box_sobre p {
+    width: 500px;
+    height: 475px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.contorno {
+    margin-top: 100px;
+    position: absolute;
+    border: 7px solid#00A1E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 260px;
+    height: 260px;
+}
+
+.contorno_2 {
+    margin-top: 100px;
+    position: absolute;
+    border: 7px solid #00A1E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 260px;
+    height: 260px;
+    margin-left: 25vw;
+}
+
+.contorno_3 {
+    margin-top: 100px;
+    position: absolute;
+    border: 7px solid #00A1E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 260px;
+    height: 260px;
+    margin-left: 49vw;
+}
+
+.nome_clinica {
+    bottom: 70px;
+    left: 35px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/imagem-clinica.png);
+}
+
+.nome_clinica hr {
+    width: 260px;
+    height: 0px;
+    border: 3px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.clínicas {
+    margin-top: 50px;
+}
+
+.clínicas h1 {
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+}
+
+.nome_clinica span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.line_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 360px;
+    margin-top: 80px;
+}
+
+.duvidas {
+    margin-top: 150px;
+    height: 623px;
+    background: linear-gradient(269.38deg, #00A3E4 0.58%, #005C81 47.73%, #00A3E4 97.93%);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_duvidas {
+    width: 1590px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 80px;
+}
+
+.ilustracao {
+    width: 660px;
+    height: 430px;
+}
+
+.duvidas hr {
+    height: 542px;
+    border: 7px solid #FFFFFF;
+}
+
+.duvidas_frequentes {
+    display: flex;
+    flex-direction: column;
+    height: 395px;
+    justify-content: space-between;
+}
+
+.duvidas_frequentes button {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #FFFFFF;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duvidas_frequentes hr {
+    height: 6px;
+    width: 546px;
+    border: 3px solid #FFFFFF;
+}
+
+.duvidas_frequentes span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    color: whitesmoke;
+}
+
+.duvidas h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+}
+
+.duvidas_line {
+    display: flex;
+    width: 525px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.final_message {
+    margin-top: 50px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container_message {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_message span {
+    text-align: center;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #006188;
+}
+
+footer {
+    min-height: 45vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: white;
+    overflow-x: hidden;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background-color: #3586FF;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .social_icon, .footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.footer .social_icon li, .footer .menu li {
+    list-style: none;
+}
+
+.footer .social_icon li a {
+    font-size: 2em;
+    color: whitesmoke;
+    margin: 10px 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+.footer .menu li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: whitesmoke;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75s;
+}
+
+.footer .menu li a:hover {
+    opacity: 1;
+    color: white;
+}
+
+.footer p {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../../assets/img/wave.png);
+    background-size: 1000px 100px;
+}
+
+.footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+.footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave02 4s linear infinite;
+}
+
+.footer .wave#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave02 3s linear infinite;
+}
+
+.footer .wave#wave5 {
+    z-index: 997;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
+
+@keyframes animateWave02 {
+    0% {
+        background-position-x: 0px
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+Link {
+    display: none;
+    text-decoration: none;
+}
